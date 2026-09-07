@@ -1,8 +1,14 @@
 -- ============================================================
 -- Library Event Management Database
 -- Relational Database Project
--- Technologies: MySQL / MariaDB, SQL
 -- ============================================================
+
+-- ============================================================
+-- Complete Database Setup Script
+-- ============================================================
+
+CREATE DATABASE IF NOT EXISTS library_event_management;
+USE library_event_management;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
