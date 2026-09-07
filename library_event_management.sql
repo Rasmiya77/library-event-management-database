@@ -108,7 +108,7 @@ VALUES
 CREATE TABLE `Feedback` (
   `FeedbackID` int(11) NOT NULL,
   `EventID` int(11) NOT NULL,
-  `Feedback_Date` date DEFAULT curdate(),
+  `Feedback_Date` date DEFAULT NULL,
   `Feedback_Rating` int(11) DEFAULT NULL CHECK (`Feedback_Rating` > 0 AND `Feedback_Rating` < 6),
   `Feedback_Comments` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
